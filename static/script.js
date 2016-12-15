@@ -8,18 +8,17 @@
 	};
 	firebase.initializeApp(config);
 
-
-	contentString = '<div class="content-window">' +
-			'<img src=' + imgSource + '>' + 
-			'<h3> ' + object + ' </h3>' +
-			'</div>';
-
 	object = "";
 	populate(object);
 
-	function loadPage(){
+	function loadPage(object){
 		const content = document.getElementById("content");
-		
+		var imgSource = "https://s30.postimg.org/t7kxdxflt/IMG_4052.jpg";
+		var contentString = '<div class="content-window">' +
+			'<img src="' + imgSource + '" class="img-responsive" height="400px">' + 
+			'<h3> ' + object + ' </h3>' +
+			'</div>';
+		content.insertAdjacentHTML('beforeend', contentString);
 	};
 
 	function populate(object){
@@ -32,7 +31,7 @@
 		      		// childData will be the actual contents of the child
 		      		var childData = childSnapshot.val().RefNumber;
 		      		if (!childData){
-		      			console.log(key);
+		      			loadPage(key);
 		      		}
 		      		else {
 		      			console.log(key + " " + childData);

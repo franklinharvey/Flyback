@@ -2618,3 +2618,6 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 }
 
 /*# sourceMappingURL=bootflat.css.map */
+img {
+    image-orientation: from-image;
+}
