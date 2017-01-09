@@ -1,5 +1,4 @@
 .content-window {
-  position: relative;
 }
 
 .image-text {
@@ -7,6 +6,10 @@
   left: 20px;
   bottom: 20px;
   color: #FFF;
+}
+
+.navbar-dark {
+  background-color: #000;
 }
 
 mark {
