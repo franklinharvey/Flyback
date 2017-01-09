@@ -6,5 +6,18 @@
   position: absolute;
   left: 20px;
   bottom: 20px;
-  color: white;
+  color: #FFF;
 }
+
+mark {
+  background-color: red;
+}
+
+img { height: 150px; background-color: #ddd;}
+img[class] { width: 150px }
+
+.object-fit_fill { object-fit: fill }
+.object-fit_contain { object-fit: contain }
+.object-fit_cover { object-fit: cover }
+.object-fit_none { object-fit: none }
+.object-fit_scale-down { object-fit: scale-down }
